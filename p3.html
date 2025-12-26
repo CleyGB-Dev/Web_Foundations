@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Definitivo: Aprendendo JavaScript do Zero</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+    <link rel="stylesheet" href="src/p3.css">
+    <script src="src/scripts.js" defer></script>
+</head>
+<body>
+
+    <header class="title_page" style="background: linear-gradient(135deg, #f7df1e 0%, #dab900 100%); color: #323330;">
+        <h1>⚡ JavaScript: O Cérebro da Web</h1>
+        <p>Aprenda a dar vida, inteligência e interatividade ao seu site.</p>
+    </header>
+
+    <main class="content_page">
+        
+        <section>
+            <h2>Módulo 1: O que é JavaScript?</h2>
+            <p>O JavaScript é uma <strong>linguagem de programação</strong> real. Enquanto o HTML e o CSS cuidam do visual, o JS cuida do <strong>comportamento</strong>.</p>
+            <p>Com ele, você pode criar desde botões que mudam de cor até sistemas complexos como o Facebook ou o Google Maps.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 2: Guardando Dados (Variáveis)</h2>
+            <p>Imagine que variáveis são <strong>caixas</strong> onde você guarda informações para usar depois. Hoje usamos principalmente o <code>let</code> e o <code>const</code>:</p>
+            <pre style="border-left: 5px solid #f7df1e;">
+let nome = "João";      // Esta caixa pode mudar de valor
+const idade = 25;       // Esta caixa é fixa (constante)</pre>
+            <p>O JavaScript consegue guardar textos (Strings), números (Numbers) e listas (Arrays).</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 3: Funções (As Máquinas)</h2>
+            <p>Uma função é um bloco de código que executa uma tarefa quando você o chama. É como uma receita de bolo: você define os passos e só "faz o bolo" quando precisa.</p>
+            <code>function dizerOla() { alert("Olá, mundo!"); }</code>
+            <p>As funções permitem que você não precise repetir o mesmo código várias vezes.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 4: Tomando Decisões (If/Else)</h2>
+            <p>O JS pode decidir o que fazer dependendo da situação. É a lógica do "SE":</p>
+            <pre>
+if (idade >= 18) {
+  console.log("Pode entrar");
+} else {
+  console.log("Entrada proibida");
+}</pre>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 5: O DOM (A Ponte)</h2>
+            <p>O **DOM** é como o JavaScript "enxerga" o seu HTML. Para o JS mexer em um botão ou texto, ele precisa "selecionar" esse elemento:</p>
+            <ul>
+                <li><code>document.getElementById("id")</code>: Pega um elemento pelo ID.</li>
+                <li><code>document.querySelector(".classe")</code>: Pega um elemento pela classe.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 6: Eventos (Reações)</h2>
+            <p>O JavaScript fica "ouvindo" o que o usuário faz na página. Exemplos de eventos:</p>
+            <ul>
+                <li><strong>onclick:</strong> Quando clica em algo.</li>
+                <li><strong>onmouseover:</strong> Quando passa o mouse por cima.</li>
+                <li><strong>onkeydown:</strong> Quando aperta uma tecla.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 7: Teste a Lógica</h2>
+            <p>O botão abaixo usa o código que consertamos lá no início. Ao clicar, ele aciona uma <strong>função</strong> que executa um <strong>método</strong> do navegador para abrir uma janela.</p>
+            
+            <div style="text-align: center; background: #5a5a5a; padding: 20px; border-radius: 10px; border: 1px solid #f7df1e;">
+                <button id="p3" style="background: #323330; color: #f7df1e;">Executar JavaScript</button>
+                <p style="margin-top: 10px;"><small>O clique é o <strong>Evento</strong>, o código executado é a <strong>Função</strong>.</small></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer_page">
+        <p>&copy; 2025 - Guia JS para Iniciantes. <br> "O JavaScript torna o estático em dinâmico."</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* =========================================
+   1. RESET E BASE
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #f4f7fa; /* Azul acinzentado bem clarinho */
+    color: #2d3436;
+    line-height: 1.8;
+}
+
+/* =========================================
+   2. CABEÇALHO (GRADIENTE CSS3)
+   ========================================= */
+.title_page {
+    background: linear-gradient(135deg, #214ce5 0%, #2965f1 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* Corte estiloso no fundo */
+    margin-bottom: 40px;
+}
+
+.title_page h1 {
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+}
+
+.title_page p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* =========================================
+   3. CONTAINER PRINCIPAL
+   ========================================= */
+.content_page {
+    max-width: 850px;
+    margin: 0 auto 50px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* =========================================
+   4. TIPOGRAFIA E SEÇÕES
+   ========================================= */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #214ce5;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 30px;
+    background: #2965f1;
+    border-radius: 10px;
+}
+
+/* =========================================
+   5. BLOCOS DE CÓDIGO E DESTAQUES
+   ========================================= */
+code {
+    background: #e8ecfd;
+    color: #214ce5;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95em;
+}
+
+pre {
+    background: #1e1e1e;
+    color: #9cdcfe; /* Azul claro estilo VS Code */
+    padding: 25px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 20px 0;
+    font-family: 'Consolas', monospace;
+    border-right: 4px solid #2965f1;
+}
+
+/* Estilizando listas */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* =========================================
+   6. ELEMENTOS INTERATIVOS (BOTÕES)
+   ========================================= */
+button#p2 {
+    background: #214ce5;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(33, 76, 229, 0.3);
+}
+
+button#p2:hover {
+    background: #1a3bb3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(33, 76, 229, 0.4);
+}
+
+/* =========================================
+   7. RODAPÉ E DIVISORES
+   ========================================= */
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ddd, transparent);
+    margin: 40px 0;
+}
+
+.footer_page {
+    text-align: center;
+    padding: 40px;
+    color: #636e72;
+    background: #eef2f7;
+    border-top: 1px solid #d1d8e0;
+}
+
+/* =========================================
+   8. ADAPTAÇÃO PARA CELULAR (RESPONSIVO)
+   ========================================= */
+@media (max-width: 768px) {
+    .content_page {
+        margin: 15px;
+        padding: 25px;
+    }
+    
+    .title_page {
+        padding: 50px 20px;
+    }
+    
+    .title_page h1 {
+        font-size: 2rem;
+    }
+}

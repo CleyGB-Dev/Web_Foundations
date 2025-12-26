@@ -1,0 +1,131 @@
+/* =========================================
+   1. CONFIGURAÇÕES GERAIS
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================================
+   2. TÍTULO PRINCIPAL (BANNER)
+   ========================================= */
+.title_page {
+    background: #2c3e50;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 5px solid #3498db;
+}
+
+.title_page h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   3. CONTAINER DE PASSOS (LAYOUT FLEX)
+   ========================================= */
+.header_page {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: -30px auto 40px; /* Sobe um pouco para sobrepor o banner */
+    padding: 0 20px;
+    flex-wrap: wrap; /* Para funcionar no celular */
+}
+
+/* Estilo comum para os 3 cards */
+.cont1_header, .cont2_header, .cont3_header {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-top: 5px solid transparent;
+}
+
+/* Efeito de passar o mouse */
+.cont1_header:hover, .cont2_header:hover, .cont3_header:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Cores específicas para cada tecnologia */
+.cont1_header { border-top-color: #e34c26; } /* Laranja HTML */
+.cont2_header { border-top-color: #214ce5; } /* Azul CSS */
+.cont3_header { border-top-color: #f7df1e; } /* Amarelo JS */
+
+.header_page h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* =========================================
+   4. CONTEÚDO PRINCIPAL
+   ========================================= */
+.content_page {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.content_page h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.content_page p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* =========================================
+   5. IMAGEM E RODAPÉ
+   ========================================= */
+.img_content_page {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.example_image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.footer_page {
+    text-align: center;
+    padding: 30px;
+    background: #2c3e50;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   6. RESPONSIVIDADE
+   ========================================= */
+@media (max-width: 768px) {
+    .header_page {
+        margin-top: 20px;
+    }
+}

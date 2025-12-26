@@ -1,0 +1,181 @@
+/* 1. Configurações Globais (Reset e Fontes) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. Cabeçalho (O topo do site) */
+.title_page {
+    background: linear-gradient(135deg, #e34c26 0%, #f06529 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.title_page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* 3. Container de Conteúdo */
+.content_page {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+/* 4. Títulos e Seções */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #e34c26;
+    border-left: 5px solid #e34c26;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+h3 {
+    margin: 20px 0 10px;
+    color: #444;
+}
+
+/* 5. Estilização de Código (O "pulo do gato") */
+code {
+    background: #fdf0ed;
+    color: #e34c26;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+pre {
+    background: #2d2d2d;
+    color: #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    margin: 20px 0;
+    border-left: 5px solid #f06529;
+}
+
+/* 6. Listas e Blocos de Destaque */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #ccc;
+    padding: 15px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+/* 7. Formulários e Botões */
+form {
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #f06529;
+    box-shadow: 0 0 5px rgba(240, 101, 41, 0.2);
+}
+
+button {
+    background: #e34c26;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+    background: #f06529;
+    transform: translateY(-2px);
+}
+
+/* 8. Imagens */
+.img_content_page {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.example_image {
+    transition: 0.5s;
+}
+
+.example_image:hover {
+    transform: scale(1.1);
+}
+
+/* 9. Rodapé */
+.footer_page {
+    text-align: center;
+    padding: 40px 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 40px 0;
+}
+
+/* 10. Responsividade (Celular) */
+@media (max-width: 600px) {
+    .content_page {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .title_page h1 {
+        font-size: 1.8rem;
+    }
+}

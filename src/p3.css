@@ -1,0 +1,165 @@
+/* =========================================
+   1. CONFIGURAÇÕES BASE
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', 'Cascadia Code', monospace; /* Fonte estilo código */
+}
+
+body {
+    background-color: #1e1e1e; /* Fundo escuro para destacar o amarelo */
+    color: #e0e0e0;
+    line-height: 1.7;
+}
+
+/* =========================================
+   2. CABEÇALHO (ESTILO JS VIBRANTE)
+   ========================================= */
+.title_page {
+    background: linear-gradient(135deg, #f7df1e 0%, #ffec3d 100%);
+    color: #323330;
+    padding: 70px 20px;
+    text-align: center;
+    border-bottom: 8px solid #323330;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.title_page h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.title_page p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* =========================================
+   3. CONTAINER DE CONTEÚDO (DARK MODE)
+   ========================================= */
+.content_page {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #252526; /* Cinza do VS Code */
+    padding: 50px;
+    border-radius: 4px; /* Cantos mais retos, estilo técnico */
+    border: 1px solid #333;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+/* =========================================
+   4. TÍTULOS E SEÇÕES
+   ========================================= */
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    color: #f7df1e;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+h2::before {
+    content: "=> ";
+    margin-right: 10px;
+    color: #f7df1e;
+    font-weight: bold;
+}
+
+/* =========================================
+   5. BLOCOS DE CÓDIGO (SINTAXE HIGHLIGHT)
+   ========================================= */
+code {
+    background: #323330;
+    color: #f7df1e;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.95em;
+    border: 1px solid #444;
+}
+
+pre {
+    background: #000;
+    color: #f7df1e;
+    padding: 25px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 25px 0;
+    font-size: 1rem;
+    border-left: 10px solid #f7df1e;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li strong {
+    color: #f7df1e;
+}
+
+/* =========================================
+   6. O BOTÃO INTERATIVO
+   ========================================= */
+button#p3 {
+    background: #f7df1e;
+    color: #323330;
+    border: none;
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+button#p3:hover {
+    background: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(247, 223, 30, 0.4);
+}
+
+/* =========================================
+   7. RODAPÉ E DIVISORES
+   ========================================= */
+hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 50px 0;
+}
+
+.footer_page {
+    text-align: center;
+    padding: 50px;
+    color: #888;
+    background: #1a1a1a;
+}
+
+/* =========================================
+   8. RESPONSIVIDADE
+   ========================================= */
+@media (max-width: 768px) {
+    .content_page {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .title_page h1 {
+        font-size: 2.2rem;
+    }
+}

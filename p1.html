@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Definitivo: Aprendendo HTML do Zero</title>
+    <link rel="icon" href="https://prosimples.com/wp-content/uploads/2024/01/html.png">
+    <link rel="stylesheet" href="src/p1.css">
+    <script src="src/scripts.js" defer></script>
+</head>
+<body>
+
+    <header class="title_page">
+        <h1>🏗️ Escola de HTML: O Guia do Zero</h1>
+        <p>Você vai aprender a criar a fundação de qualquer site da internet.</p>
+    </header>
+
+    <main class="content_page">
+        
+        <section>
+            <h2>Módulo 1: O que é o HTML de verdade?</h2>
+            <p>Imagine que você vai escrever uma carta. Você decide o que é título, o que é parágrafo e onde vai uma foto. O <strong>HTML</strong> é exatamente isso, mas para o navegador (Chrome, Safari, Edge).</p>
+            <p>Ele <strong>não é programação</strong> (ele não faz cálculos), ele é <strong>marcação</strong>. Ele diz: "Ei navegador, isso aqui é um botão!", "Isso aqui é um título!".</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 2: O segredo das "Tags" 🏷️</h2>
+            <p>No HTML, quase tudo funciona em duplas. Imagine que são caixas:</p>
+            <div style="background: #eef; padding: 15px; border-radius: 8px;">
+                <code>&lt;tag&gt;</code> <strong>Abertura:</strong> Avisa onde o efeito começa.<br>
+                <code>Conteúdo</code> <strong>O recheio:</strong> O texto ou imagem real.<br>
+                <code>&lt;/tag&gt;</code> <strong>Fechamento:</strong> Avisa onde o efeito termina (repare na barra <code>/</code>).
+            </div>
+            <p><strong>Exemplo real:</strong> <code>&lt;b&gt;</code>Este texto fica em negrito<code>&lt;/b&gt;</code>.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 3: O "Esqueleto" Obrigatório</h2>
+            <p>Todo arquivo <code>.html</code> precisa desse código para nascer. Se você deletar uma linha daqui, o site pode quebrar:</p>
+            <ul style="list-style: none; padding-left: 0;">
+                <li>🌍 <strong>html:</strong> Abraça o site inteiro.</li>
+                <li>🧠 <strong>head:</strong> A parte invisível. Aqui ficam as configurações, o título da aba e os links de CSS/JS.</li>
+                <li>👀 <strong>body:</strong> A parte visível. Tudo que você digitar aqui aparecerá para o usuário.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 4: Organizando Textos (SEO)</h2>
+            <p>O Google lê seu site de cima para baixo. Você precisa usar os títulos na ordem certa:</p>
+            <h1 style="border-bottom: 2px solid #ddd;">H1 - O Assunto Principal (Use apenas UM por página)</h1>
+            <h2>H2 - Subtítulos importantes</h2>
+            <h3>H3 - Tópicos dentro dos subtítulos</h3>
+            <p>Para textos longos, use a tag <code>&lt;p&gt;</code>. Ela cria um espaço automático entre os blocos de texto, facilitando a leitura.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 5: Criando Interação 🖱️</h2>
+            <p>Como o usuário navega? Através de links e botões.</p>
+            <p><strong>Link:</strong> Usamos a tag <code>&lt;a&gt;</code> com o atributo <code>href</code> (que é o endereço de destino).</p>
+            <a href="https://www.google.com" target="_blank">Clique aqui para ir ao Google (Abre em nova aba)</a>
+            <br><br>
+            <p><strong>Botão:</strong> Usamos a tag <code>&lt;button&gt;</code>. Lembra do nosso JavaScript? Ele está "ouvindo" esse botão abaixo:</p>
+            <button id="p1">Botão Mágico com JS</button>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 6: Trazendo Vida com Imagens 🖼️</h2>
+            <p>Diferente de outras tags, a de imagem não tem fechamento. Ela é "solteira":</p>
+            <code>&lt;img src="link-da-foto.jpg" alt="descrição"&gt;</code>
+            <div class="img_content_page" style="margin-top: 20px;">
+                <img src="https://prosimples.com/wp-content/uploads/2024/01/html.png" alt="Logo do HTML" width="100">
+                <p><small>O <strong>src</strong> é a fonte (caminho) e o <strong>alt</strong> é o texto alternativo para quem não consegue ver a imagem.</small></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 7: Formulários (Onde a mágica acontece)</h2>
+            <p>É assim que o Facebook pega seu e-mail ou o Google faz buscas. Conheça as peças:</p>
+            <form style="background: #f9f9f9; padding: 20px; border: 1px dashed #ccc;">
+                <label>Nome Completo:</label><br>
+                <input type="text" placeholder="Ex: João Silva"><br><br>
+
+                <label>Seu melhor E-mail:</label><br>
+                <input type="email" placeholder="email@exemplo.com"><br><br>
+
+                <label>Deixe uma mensagem:</label><br>
+                <textarea rows="4" cols="30"></textarea><br><br>
+
+                <button type="button">Enviar Dados</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo Bônus: A Semântica Profissional</h2>
+            <p>Não use <code>&lt;div&gt;</code> para tudo! Use nomes que expliquem o que a seção faz:</p>
+            <ul>
+                <li><strong>&lt;header&gt;</strong> para o topo.</li>
+                <li><strong>&lt;nav&gt;</strong> para o menu.</li>
+                <li><strong>&lt;main&gt;</strong> para o conteúdo principal.</li>
+                <li><strong>&lt;footer&gt;</strong> para o rodapé.</li>
+            </ul>
+            <p><em>Isso faz seu site aparecer primeiro no Google!</em></p>
+        </section>
+
+    </main>
+
+    <footer class="footer_page">
+        <p>&copy; 2025 - Guia do Iniciante Inteligente. <br> "O código é a poesia que o computador lê."</p>
+    </footer>
+
+</body>
+</html>

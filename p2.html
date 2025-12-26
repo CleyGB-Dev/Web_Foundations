@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Definitivo: Aprendendo CSS do Zero</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+    <link rel="stylesheet" href="src/p2.css">
+    <script src="src/scripts.js" defer></script>
+</head>
+<body>
+
+    <header class="title_page" style="background: linear-gradient(135deg, #214ce5 0%, #2965f1 100%);">
+        <h1>🎨 CSS3: A Arte de Estilizar</h1>
+        <p>Transforme códigos sem graça em interfaces profissionais e modernas.</p>
+    </header>
+
+    <main class="content_page">
+        
+        <section>
+            <h2>Módulo 1: O que é CSS?</h2>
+            <p>CSS significa <strong>Cascading Style Sheets</strong> (Folhas de Estilo em Cascata). Ele não cria textos ou botões; ele diz ao navegador qual deve ser a cor, o tamanho, a posição e até a animação desses elementos.</p>
+            
+            
+            
+            <p>Sem CSS, a internet seria apenas uma pilha de textos pretos e fundo branco.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 2: A Regra do CSS</h2>
+            <p>Escrever CSS é como dar ordens. A estrutura básica (Sintaxe) é sempre assim:</p>
+            <pre style="border-left: 5px solid #214ce5;">
+seletor {
+  propriedade: valor;
+}</pre>
+            <p><strong>Exemplo:</strong> Se você quer que todos os parágrafos sejam azuis:</p>
+            <code>p { color: blue; }</code>
+            <p>O <strong>Seletor</strong> diz QUEM você quer mudar, e a <strong>Propriedade/Valor</strong> diz O QUE vai mudar.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 3: O Modelo de Caixa (Box Model)</h2>
+            <p>Este é o conceito mais importante: No CSS, <strong>tudo é uma caixa</strong>. Cada elemento tem 4 camadas:</p>
+            
+            
+            
+            <ul>
+                <li><strong>Content:</strong> O conteúdo real (texto ou imagem).</li>
+                <li><strong>Padding:</strong> O respiro interno (espaço entre o texto e a borda).</li>
+                <li><strong>Border:</strong> A linha que circula a caixa.</li>
+                <li><strong>Margin:</strong> O espaço externo (distância entre uma caixa e outra).</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 4: Como escolher quem estilizar?</h2>
+            <p>Existem três formas principais de mirar em um elemento:</p>
+            <ol>
+                <li><strong>Pela Tag:</strong> <code>h1 { }</code> (Afeta todos os H1).</li>
+                <li><strong>Pela Classe (.):</strong> <code>.botao-verde { }</code> (Afeta apenas quem tem <code>class="botao-verde"</code>).</li>
+                <li><strong>Pelo ID (#):</strong> <code>#topo { }</code> (Afeta apenas o elemento único com <code>id="topo"</code>).</li>
+            </ol>
+            <p><em>Dica: Use Classes para vários elementos e IDs apenas para um elemento único na página!</em></p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 5: Cores e Fontes</h2>
+            <p>No CSS, você pode definir cores de três formas:</p>
+            <ul>
+                <li><strong>Nomes:</strong> <code>red</code>, <code>blue</code>, <code>transparent</code>.</li>
+                <li><strong>Hexadecimal:</strong> <code>#FF5733</code> (Combinação de letras e números).</li>
+                <li><strong>RGB:</strong> <code>rgb(255, 87, 51)</code>.</li>
+            </ul>
+            <p>Para fontes, usamos <code>font-family</code>, <code>font-size</code> (tamanho) e <code>font-weight</code> (peso/negrito).</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 6: Flexbox (Alinhamento Moderno)</h2>
+            <p>Antigamente era difícil alinhar coisas lado a lado. Hoje usamos o <strong>Flexbox</strong>. Basta dizer ao "pai" dos elementos:</p>
+            <code>display: flex;</code>
+            <p>Com isso, você pode usar <code>justify-content: center;</code> para centralizar tudo horizontalmente num piscar de olhos!</p>
+            
+            
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Módulo 7: Exemplo Prático</h2>
+            <p>Veja como transformar um botão comum em um botão "bonitão":</p>
+            <div style="display: flex; gap: 20px; align-items: center; background: #f4f4f4; padding: 20px; border-radius: 10px;">
+                <div>
+                    <p>Sem CSS:</p>
+                    <button style="all: revert;">Botão</button>
+                </div>
+                <div>
+                    <p>Com CSS:</p>
+                    <button id="p2">Botão</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer_page">
+        <p>&copy; 2025 - Guia CSS para Iniciantes. <br> "O HTML constrói, o CSS dá vida."</p>
+    </footer>
+
+</body>
+</html>
