@@ -22,7 +22,8 @@ Faça o clone do repositório:
 
 Bash
 
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/cleygb-dev/Web_Foundations.git)
+git clone https://github.com/cleygb-dev/Web_Foundations.git
+
 Abra o arquivo index.html em qualquer navegador.
 
 📄 Licença
