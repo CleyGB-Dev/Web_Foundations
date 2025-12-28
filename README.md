@@ -38,6 +38,9 @@ Feito com ❤️ por [CleyGB-Dev]
 ├── p2.html              # Módulo de CSS
 ├── p3.html              # Módulo de JavaScript
 ├── src/
-│   ├── styles.css      # Estilização centralizada
+│   ├── styles.css      # Estilização
+│   ├── p1.css          # Estilização 
+│   ├── p2.css          # Estilização
+│   ├── p3.css          # Estilização 
 │   ├── scripts.js      # Lógica de navegação e eventos
 │   └── images/         # Recursos visuais
